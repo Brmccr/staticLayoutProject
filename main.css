@@ -1,0 +1,416 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background:black;
+    color:gray;
+
+}
+
+h1, h2, h4, p {
+    color: white;
+}
+
+h1{
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+
+h2 {
+color: white;
+text-align: center;
+margin: .75em 0 .25em;
+font-weight: normal;
+font-size: 1.25rem;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+p {
+    margin: .5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.opening {
+    width: 100vw;
+    height: 100vh;
+    background-color: black; 
+    /* background: url("./assets/blurredBackground.jpg"); */
+    background: url("./assets/Netflix-Background.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* background-repeat: repeat; */
+    border-bottom: 8px solid #222;
+
+}
+
+.container {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px;
+    line-height: .1%;
+    top: 3.3em;
+    left: -2em;
+}
+
+.opening-top {
+    position: relative;
+    height: 90px;
+}
+
+.opening-top img {
+    width: 200px;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+}
+
+.opening-top a {
+    position: absolute;
+    top: 27%;
+    right: 5%;
+}
+
+.timeline-bar{
+display: flex;
+direction: ltr;
+text-align: center;
+position: relative;
+background: linear-gradient(to right, #00d65f 10%, #308234 50%, #3f3f3f 50%, #3f3f3f 85%, rgba(63, 63, 63, 0) 100%);
+width: 75%;
+height: 2.3em;
+border-radius: 0.95em 0 0 0.95em;
+margin: 0.5em 0.1em 1.25em;
+justify-content: center;
+top: .7em;
+left: 10.3em;
+}
+
+.line-bar{
+    width: 55px;
+    height: 1.5px;
+    position: relative;
+    top: 1.65em;
+    left: -2em;
+    background-color: white;
+    border-style: solid;
+    border-color: #000;
+    transform: rotate(90deg)
+}
+
+.before{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    position: relative;
+    border: solid 1px black;
+    border-radius: 40px 40px 40px 40px;
+    left: -.8em;
+
+}
+
+.after{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    position: relative;
+    border: solid 1px black;
+    border-radius: 40px 40px 40px 40px;
+    left: 20.5em;
+
+}
+
+.firstBill {
+    position: relative;
+    text-align: center;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    left: -1.2em;
+    top: 4.3em;
+}
+
+
+.opening-barText {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+    direction: ltr;
+    left: -8.2em;
+    top: 1.65em;
+}
+
+.daysGreen h1 {
+    color:  #00d65f;
+    font-size: 28px;
+    left: 40em;
+}
+
+.firstDate p {
+    position: relative;
+    font-size: 26px;
+    left: 2.2em;
+}
+
+.secondDate p {
+    position: relative;
+    font-size: 26px;
+    left: 3em;
+}
+.opening-text {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    direction: ltr;
+    line-height: 90%;
+}
+
+.opening-text p {
+    font-size: 26px;   
+    position: relative;
+    left: -1em;
+    top: 2em;
+}
+
+.dayReminder {
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: white;
+    font-weight: normal;
+    font-size: 1.25rem;
+    padding-left: 2.3em;
+    position: relative;
+    left: 50%;
+    text-align: left;
+    margin-left: -3.5em;
+    width: 30%;
+}
+
+.dayReminderText h2{
+    font-size: 25px;
+    position: relative;
+    left: -1.5em;
+
+}
+
+.envelope {
+display: flex;
+color: white;
+font-family: 'nf-icon';
+/* font-size: 10em; */
+position: absolute;
+left: -2.0em;
+top: .6em;
+height: 2em;
+width: 2.3em;
+background: center center no-repeat url('data:image/svg+xml;utf8,<svg width="29px" height="20px" viewBox="0 0 29 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>fuji-freetrial-envelope</title><g id="fuji-freetrial-envelope" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group-2" transform="translate(2.000000, 2.000000)"><g id="Group"><rect id="Rectangle-9" fill="%23D8D8D8" x="0" y="0" width="25" height="16" rx="0.727272727"></rect><path d="M2.40783036,4.02204036 C1.95383001,3.62595851 1.90687778,2.93683072 2.30295964,2.48283036 C2.69904149,2.02883001 3.38816928,1.98187778 3.84216964,2.37795964 L12.2241011,9.69057713 C12.3600176,9.80915432 12.5623145,9.81017921 12.6994255,9.69298526 L21.2660909,2.37073526 C21.7240811,1.9792738 22.4126978,2.03320607 22.8041593,2.49119634 C23.1956207,2.94918661 23.1416885,3.63780329 22.6836982,4.02926474 L14.1170328,11.3515147 C13.1572555,12.1718724 11.7411778,12.1646982 10.7897618,11.3346579 L2.40783036,4.02204036 Z" id="Path-3" fill="%23000000" fill-rule="nonzero"></path><path d="M6.89721847,6.99603756 C7.31816368,6.56498967 8.00884056,6.55679982 8.43988845,6.97774503 C8.87093635,7.39869024 8.87912619,8.08936712 8.45818098,8.52041501 L3.93761728,13.1494722 C3.51667207,13.5805201 2.82599519,13.58871 2.3949473,13.1677648 C1.9638994,12.7468196 1.95570956,12.0561427 2.37665477,11.6250948 L6.89721847,6.99603756 Z" id="Path-4" fill="%23000000" fill-rule="nonzero"></path><path d="M20.9275824,7.23781127 C21.3485277,6.80676338 22.0392045,6.79857353 22.4702524,7.21951874 C22.9013003,7.64046395 22.9094902,8.33114083 22.488545,8.76218873 L17.9679813,13.391246 C17.547036,13.8222939 16.8563592,13.8304837 16.4253113,13.4095385 C15.9942634,12.9885933 15.9860735,12.2979164 16.4070187,11.8668685 L20.9275824,7.23781127 Z" id="Path-4-Copy" fill="%23000000" fill-rule="nonzero" transform="translate(19.447782, 10.314529) scale(-1, 1) translate(-19.447782, -10.314529)"></path></g></g></g></svg>');
+align-items: center;
+}
+
+.dayRemindertext h2{
+    display: flex;
+    position: relative;
+    left: 20em;
+    top: 0;
+
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+    padding-top: 30px;
+    width: 100vw;
+    padding-bottom: 59px;
+    border-bottom: 8px solid rgb(34, 34, 34);
+}
+
+.tv {
+    flex-direction: row;
+    margin-left: 1em;
+    order: 1;
+    color: white;
+    -webkit-box-direction: normal;
+    /* max-width: 100%; */
+    height: 35%;
+    width: 35%;
+    border: 0;
+    /* position: relative; */
+}
+
+.firstSectionText {
+    text-align: left;
+}
+
+.firstSectionText h1 {
+    font-size: 43px;
+}
+
+.firstSectionText h2 {
+    font-size: 28px;
+    text-align: left;
+    line-height: 70%;
+
+}
+
+.section2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+    padding-top: 30px;
+    width: 100vw;
+    padding-bottom: 59px;
+    border-bottom: 8px solid rgb(34, 34, 34);
+}
+
+.secondSectionText {
+    position: relative;
+    text-align: left;
+    left: -7em;
+}
+
+.secondSectionText h1 {
+    font-size: 43px;
+    line-height: 55%;
+}
+
+.secondSectionText h2 {
+    font-size: 28px;
+    text-align: left;
+    line-height: 70%;
+}
+
+.phone {
+    flex-direction: row;
+    margin-left: 1em;
+    order: 0;
+    color: white;
+    -webkit-box-direction: normal;
+    height: 33%;
+    width: 33%;
+    border: 0;
+}
+
+.animContainer {
+    position: relative;
+    width: 280px;
+    height: 83px;
+    border: solid 1px gray;
+    border-radius: 10px 10px 10px 10px;
+    left: -24.2em;
+    top: 5.8em;
+    background-color: black;
+}
+
+.photo {
+    position: relative;
+    width: 50px;
+    height: 65px;
+    left: 1em;
+    top: .7em;
+}
+
+.animation {
+    position: relative;
+    top: -3.7em;
+    left: 5em;
+    line-height: 3%;
+}
+
+.animation h5 {
+    color: #0071eb
+}
+
+.fa-circle-notch {
+    position: relative;
+    color: #0071eb;
+    left: 4.7em;
+    top: -1.5em;
+}
+
+.btn {
+    display: inline-block;
+    background:  #e50914;
+    color: white;
+    padding: 0.4rem 1.3rem;
+
+}
+
+.btn-black {
+    position: relative;
+    background-color:  black;
+    border: #fff;
+    border-style: outset;
+    border-radius: 4px;
+    font-size: 23px;
+    text-transform: uppercase;
+    top: 1em;
+}
+
+.btn-round { /* Skips btn when calling with FAS */
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.large {
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    left: 16.3em;
+    top: 3em;
+    border-radius: 2px;
+    padding: 23px 61px;
+    white-space: normal;
+}
+
+.content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content h1 {
+    position: relative;
+    font-weight: 700;
+    font-size: 50px;
+    /* line-height: 70%; */
+    line-height: 1.1;
+    margin:0;
+    left: .5em;
+}
